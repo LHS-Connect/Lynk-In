@@ -1,0 +1,31 @@
+/* --- Global Styles & Variables --- */
+@import url('https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap');
+
+:root {
+  --bg-dark: #0f0f12;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --bg-card-hover: rgba(255, 255, 255, 0.08);
+  --accent-red: #880000;
+  --text-main: #e0e0e0;
+  --font-primary: 'Slabo 13px', serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1a0505 0%, var(--bg-dark) 100%);
+  color: var(--text-main);
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-red);
+  border-radius: 10px;
+}

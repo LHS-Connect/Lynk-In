@@ -1,0 +1,32 @@
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.heading {
+  font-size: 1.8rem;
+  margin-top: 0;
+  color: #ff4d4d;
+  outline: none;
+}
+
+.title-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 0.25rem auto 2rem auto;
+  color: var(--text-main);
+  font-weight: 400;
+  text-align: center;
+}
+
+.subtitle.offset {
+  position: absolute;
+  bottom: -0.3em;
+  right: -0.2em;
+}
