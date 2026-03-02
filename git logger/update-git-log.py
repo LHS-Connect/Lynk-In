@@ -67,7 +67,7 @@ def update_log():
         print(f"Update failed: {e}")
 
 def start_server():
-    PORT = 8000
+    PORT = 8248
     # This ensures the server starts from the PARENT of the 'git logger' folder
     # so that index.html (in the root) can be found.
     os.chdir(os.path.dirname(os.getcwd())) 

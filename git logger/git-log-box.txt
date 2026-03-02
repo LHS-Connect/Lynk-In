@@ -1,3 +1,4 @@
+Elliott Weston Ball|||https://github.com/foxstronaut|||Remove background workflow script and update git log|||commit.py, git logger/git-log-box.txt|||https://github.com/LHS-Connect/Lynk-In/commit/ea1c4a2
 Elliott Weston Ball|||https://github.com/foxstronaut|||Background log update|||commit.py, git logger/git-log-box.txt, git logger/git-log.js (+3 more)|||https://github.com/LHS-Connect/Lynk-In/commit/212fa72
 Elliott Weston Ball|||https://github.com/foxstronaut|||Fix comment syntax for horizontal scroll container in index.html|||index.html|||https://github.com/LHS-Connect/Lynk-In/commit/8710b0b
 Elliott Weston Ball|||https://github.com/foxstronaut|||Add horizontal scroll fix and restructure CSS files|||css/base.css, css/components.css, css/layout.css (+5 more)|||https://github.com/LHS-Connect/Lynk-In/commit/87f0c51
