@@ -1,4 +1,4 @@
-Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||hell no|||index.html|||https://github.com/LHS-Connect/Lynk-In/commit/7df05ff
+Mihir Pillay|||https://github.com/{'username': 'hexagonally-mired', 'color': '#e74c3c'}|||added favicon file as a PNG (god its horrendous)|||static/icon.png|||https://github.com/LHS-Connect/Lynk-In/commit/8a9730f
 Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||commit msg|||git logger/git-log-box.txt, git logger/git-log.js|||https://github.com/LHS-Connect/Lynk-In/commit/45825d3
 Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||wowawow|||css/components.css, git logger/git-log-box.txt, index.html|||https://github.com/LHS-Connect/Lynk-In/commit/103a31c
 Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||sdakfj|||git logger/git-log-box.txt, git logger/git-log.js, git logger/users.json|||https://github.com/LHS-Connect/Lynk-In/commit/cae2556
