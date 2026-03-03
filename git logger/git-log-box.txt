@@ -1,4 +1,5 @@
-Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||commit msg|||git logger/git-log.js|||https://github.com/LHS-Connect/Lynk-In/commit/fa6b58c
+Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||hell no|||index.html|||https://github.com/LHS-Connect/Lynk-In/commit/7df05ff
+Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||commit msg|||git logger/git-log-box.txt, git logger/git-log.js|||https://github.com/LHS-Connect/Lynk-In/commit/45825d3
 Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||wowawow|||css/components.css, git logger/git-log-box.txt, index.html|||https://github.com/LHS-Connect/Lynk-In/commit/103a31c
 Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||sdakfj|||git logger/git-log-box.txt, git logger/git-log.js, git logger/users.json|||https://github.com/LHS-Connect/Lynk-In/commit/cae2556
 Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||uhh, css fixes, its no longer 50/50|||css/components.css, css/layout.css, git logger/git-log-box.txt (+1 more)|||https://github.com/LHS-Connect/Lynk-In/commit/7533e52
