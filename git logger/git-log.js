@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const logContainer = document.getElementById('git-log-list');
 
-    // Fetch both the user configuration and the git log text file
+    // Fetch both the user configuration and the git log text file from the 'git logger' directory
     Promise.all([
-        fetch('users.json').then(res => res.json()),
+        fetch('git logger/users.json').then(res => {
+            if (!res.ok) throw new Error('User config (users.json) not found in git logger/');
+            return res.json();
+        }),
         fetch('git logger/git-log-box.txt').then(res => {
-            if (!res.ok) throw new Error('Log file not found');
+            if (!res.ok) throw new Error('Log file (git-log-box.txt) not found in git logger/');
             return res.text();
         })
     ])
@@ -48,6 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(err => {
         console.error('Log Error:', err);
-        logContainer.innerHTML = `<div class="scroll-item"><p style="color: red;">Error: ${err.message}</p></div>`;
+        logContainer.innerHTML = `<div class=\"scroll-item\"><p style=\"color: red;\">Error: ${err.message}</p></div>`;
     });
 });
