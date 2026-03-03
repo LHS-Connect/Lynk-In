@@ -1,4 +1,5 @@
-Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||update README|||readme.md|||https://github.com/LHS-Connect/Lynk-In/commit/51b6d91
+Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||agh fuck css|||index.html|||https://github.com/LHS-Connect/Lynk-In/commit/a580ce0
+Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||update README|||git logger/git-log-box.txt, readme.md|||https://github.com/LHS-Connect/Lynk-In/commit/9786f2e
 Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||afsdlfja|||git logger/git-log-box.txt, git logger/git-log.js, git logger/users.json|||https://github.com/LHS-Connect/Lynk-In/commit/fa9b80a
 Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||added same logic for server start|||git logger/git-log-box.txt, server.sh|||https://github.com/LHS-Connect/Lynk-In/commit/0ff1d10
 Elliott Weston Ball|||https://github.com/{'username': 'foxstronaut', 'color': '#3498db'}|||made a bash script for my tired fingers and added a easier python script module|||commit.sh, git logger/git-log-box.txt, server-start.py|||https://github.com/LHS-Connect/Lynk-In/commit/70af616
