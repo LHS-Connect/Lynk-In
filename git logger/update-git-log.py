@@ -65,24 +65,3 @@ def update_log():
             
     except Exception as e:
         print(f"Update failed: {e}")
-
-def start_server():
-    PORT = 8248
-    # This ensures the server starts from the PARENT of the 'git logger' folder
-    # so that index.html (in the root) can be found.
-    os.chdir(os.path.dirname(os.getcwd())) 
-    
-    Handler = http.server.SimpleHTTPRequestHandler
-    with socketserver.TCPServer(("", PORT), Handler) as httpd:
-        print(f"🚀 Server started at http://localhost:{PORT}")
-        print(f"📁 Serving from project root. Access files via {FOLDER_NAME}/filename")
-        
-        threading.Timer(1.0, lambda: webbrowser.open(f"http://localhost:{PORT}")).start()
-        try:
-            httpd.serve_forever()
-        except KeyboardInterrupt:
-            httpd.shutdown()
-
-if __name__ == "__main__":
-    update_log()
-    start_server()
