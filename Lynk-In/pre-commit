@@ -1,5 +1,0 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-# update git log file on each commit
-git log --oneline --decorate --graph > git-log.txt

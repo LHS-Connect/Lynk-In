@@ -1,13 +1,8 @@
 import subprocess
 import re
-import http.server
-import socketserver
-import webbrowser
-import threading
 import json
 import os
 
-# Configuration: Update this if your folder name changes
 FOLDER_NAME = "git logger"
 
 def get_remote_url():
@@ -21,47 +16,79 @@ def get_remote_url():
 
 def update_log():
     remote_base = get_remote_url()
-    
-    # Load user mappings from the current folder
+
     user_map = {}
-    json_path = os.path.join(os.path.dirname(__file__), 'users.json')
+    json_path = os.path.join(os.path.dirname(__file__), "users.json")
     if os.path.exists(json_path):
-        with open(json_path, 'r') as f:
+        with open(json_path, "r") as f:
             user_map = json.load(f)
 
     git_format = "%an|||%s|||%h"
-    
     try:
         raw_log = subprocess.check_output([
-            "git", "log", 
-            f"--pretty=format:{git_format}", 
+            "git", "log",
+            f"--pretty=format:{git_format}",
             "--name-only"
         ]).decode("utf-8")
-        
-        commits = raw_log.split('\n\n')
+
+        commits = raw_log.split("\n\n")
         formatted_lines = []
-        
+
         for commit in commits:
-            lines = commit.strip().split('\n')
-            if not lines or not lines[0]: continue
-            
-            header_parts = lines[0].split('|||')
-            if len(header_parts) < 3: continue
+            lines = commit.strip().split("\n")
+            if not lines or not lines[0]:
+                continue
+            header_parts = lines[0].split("|||")
+            if len(header_parts) < 3:
+                continue
+
             author, message, short_hash = header_parts
-            
-            files = lines[1:]
+            files = [l for l in lines[1:] if l.strip()]
             file_str = ", ".join(files[:3]) + (f" (+{len(files)-3} more)" if len(files) > 3 else "")
-            
             username = user_map.get(author, author.replace(" ", ""))
             profile_link = f"https://github.com/{username}"
             commit_link = f"{remote_base}/commit/{short_hash}"
-            
             formatted_lines.append(f"{author}|||{profile_link}|||{message}|||{file_str}|||{commit_link}")
-            
+
         output_path = os.path.join(os.path.dirname(__file__), "git-log-box.txt")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write("\n".join(formatted_lines))
-        print(f"✅ Log updated in {FOLDER_NAME}/git-log-box.txt")
-            
+
+        print(f"✅  git-log-box.txt updated ({len(formatted_lines)} commits)")
+        return output_path
+
     except Exception as e:
-        print(f"Update failed: {e}")
+        print(f"❌  Log update failed: {e}")
+        return None
+
+def make_commit():
+    print("\n📝  Enter your commit message:")
+    message = input("  > ").strip()
+
+    if not message:
+        print("❌  Commit message cannot be empty.")
+        return
+
+    try:
+        # Stage all files
+        subprocess.check_call(["git", "add", "-A"])
+        print("✅  Staged all files.")
+
+        # Make the commit
+        subprocess.check_call(["git", "commit", "-m", message])
+        print("✅  Commit made.")
+
+        # Rewrite the log now that the commit exists in history
+        log_path = update_log()
+
+        if log_path:
+            # Stage the updated log file and amend it into the commit
+            subprocess.check_call(["git", "add", log_path])
+            subprocess.check_call(["git", "commit", "--amend", "--no-edit"])
+            print("✅  git-log-box.txt amended into commit.")
+
+    except subprocess.CalledProcessError as e:
+        print(f"❌  Git command failed: {e}")
+
+if __name__ == "__main__":
+    make_commit()
