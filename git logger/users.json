@@ -1,6 +1,22 @@
 {
-    "Elliott Weston Ball": { "username": "foxstronaut", "color": "#9B649B" },
-    "⋆ℯ𝓁⋆": { "username": "foxstronaut", "color": "#9B649B" },
-    "Mihir Pillay": { "username": "hexagonally-mired", "color": "#9B7F64" },
-    "Me here": { "username": "hexagonally-mired", "color": "#9B7F64" }
+    "Elliott Weston Ball": { 
+        "username": "foxstronaut", 
+        "display_name": "Elliott Weston Ball",
+        "color": "#9B649B" 
+    },
+    "⋆ℯ𝓁⋆": { 
+        "username": "foxstronaut", 
+        "display_name": "Elliott Weston Ball",
+        "color": "#9B649B" 
+    },
+    "Mihir Pillay": { 
+        "username": "hexagonally-mired", 
+        "display_name": "Mihir Pillay",
+        "color": "#9B7F64" 
+    },
+    "Me here": { 
+        "username": "hexagonally-mired", 
+        "display_name": "Mihir Pillay",
+        "color": "#9B7F64" 
+    }
 }
