@@ -1,3 +1,4 @@
+Elliott|||https://github.com/foxstronaut|||schedule???|||index.html|||https://github.com/ChainLynxRobotics/LHS-Connect-Beta/commit/3abf5d7
 Elliott|||https://github.com/foxstronaut|||mod footer|||index.html|||https://github.com/ChainLynxRobotics/LHS-Connect-Beta/commit/12a21e4
 Elliott|||https://github.com/foxstronaut|||index updated to add message about open source and link to github repo, and server.sh updated to add message about linux/mac users.|||index.html|||https://github.com/ChainLynxRobotics/LHS-Connect-Beta/commit/3f313a4
 Elliott|||https://github.com/foxstronaut|||update git logger/users.json names of users|||git logger/users.json|||https://github.com/ChainLynxRobotics/LHS-Connect-Beta/commit/ddbf03e
