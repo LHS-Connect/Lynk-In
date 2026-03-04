@@ -19,13 +19,3 @@ Creating an actual place where people can see what's going on at school, instead
 ## Setup & Development
 
 I could not for the life of me figure out node JS and npm. so it's like that but with python.
-
-### DO NOT USE GIT COMMIT
-use the python script instead.
-if you look on the website you will see a git log, this script auto updates that log during the commit process.
-
-just run it as
-
-python3 commit.py
-
-(linux/mac users can make commit.sh executable and then use that as a shortcut if they prefer)
