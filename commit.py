@@ -77,7 +77,7 @@ def make_commit():
     full_message = f"Changed :: {change} | Reason :: {reason}"
 
     try:
-        # Stage all files
+        # Stage all of the files
         subprocess.check_call(["git", "add", "-A"])
         print("✅  Staged all files.")
 
